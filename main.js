@@ -31,7 +31,7 @@ function addDeleteBtn() {
 
     deleteBtn.addEventListener("click", (e)=>{
         e.preventDefault();
-        const li = document.querySelector("li").remove();
+        const li = e.target.parentElement.remove();
 
         var hayLi = document.querySelector("li");
 
