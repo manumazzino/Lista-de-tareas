@@ -1,0 +1,152 @@
+body{
+    width: fit-content;
+    min-width: 95%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(190, 206, 211);
+    color: rgb(24, 10, 51);
+    
+}
+
+h1{
+    margin: 10px 0px;
+}
+
+h2{
+    padding: 10px 10px 0px 10px;
+    margin: 0px;
+    color: rgb(48, 48, 48);
+}
+
+.container{
+    width:100%;
+    min-width: 220px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    
+}
+
+.tareasList{
+    width: 20%;
+    margin-right: auto;
+    margin-left: 10px;
+    min-width: 220px;    
+}
+
+form{
+    display: grid;
+}
+
+form input{
+    padding: 15px 10px;
+    width: 100%;
+    grid-row: 1;
+    
+}
+
+.btn-add{
+    padding: 15px 10px;
+    color: white;
+    background-color: teal;
+    font-family: fantasy;
+    border: none;
+    font-size: 1.4rem;
+    grid-row: 1;
+}
+
+.btn-add:hover{
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+#autocomplete.list {
+    border: 2px;
+}
+
+.empty{
+    color:darkslategray
+}
+
+.grilla{
+    background-color: white;
+    padding: 5px;
+    margin: 5px ;
+    display: flex;
+    
+}
+
+.grilla div{
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    min-width: 150px;
+    padding: 5px;
+    flex: 1;
+    text-align: center;
+}
+
+
+ul{
+    padding: 0;
+}
+
+li{
+    margin-bottom: 10px;
+    color:#000000;
+    border-radius: 5px;
+    border-style: solid;
+    list-style: none;
+    display: grid; 
+    grid-template-rows:(20px, 1fr, 20px);
+    grid-template-columns: (1fr, 20px);
+    
+}
+
+li p{
+    margin: 0;
+    outline: none;
+    padding: 5%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+   
+}
+
+.btn-delete{
+    padding: 0px 5px;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    border: none;
+    font: size 5px;
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: end;
+    background-color: inherit;
+    
+}
+
+.btn-delete:hover{
+    background-color: rgba(128, 26, 0, 0.192);
+}
+
+li input{
+    grid-row: 3;
+    grid-column: 2;
+    height: 20px;
+    width: 40px;
+    justify-self: start;
+    margin-bottom: 5px;
+    
+}
+
+li select{
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: end;
+    margin-bottom: 5px;
+}
+
