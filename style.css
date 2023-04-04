@@ -51,7 +51,7 @@ form input{
 .btn-add{
     padding: 15px 10px;
     color: white;
-    background-color: teal;
+    background-color: rgb(32, 68, 110);
     font-family: fantasy;
     border: none;
     font-size: 1.4rem;
@@ -60,7 +60,7 @@ form input{
 
 .btn-add:hover{
     cursor: pointer;
-    background-color: lightseagreen;
+    background-color: rgb(46, 131, 201);
 }
 
 #autocomplete.list {
@@ -68,7 +68,8 @@ form input{
 }
 
 .empty{
-    color:darkslategray
+    color:darkslategray;
+    padding: 0px 10px;
 }
 
 .grilla{
@@ -148,5 +149,11 @@ li select{
     grid-column: 1;
     justify-self: end;
     margin-bottom: 5px;
+}
+
+.firma{
+    color: rgb(92, 94, 100);
+    margin-left: 50px;
+
 }
 

@@ -15,12 +15,7 @@ function clasificacion(){
         grilla.appendChild(columna);
         columna.appendChild(nombreCol);
 
-        categorias.push (nombreCol.textContent)
-
-        // const agregarTarea= document.querySelector(".container")
-        // const clon = agregarTarea.cloneNode(true)
-        // columna.appendChild(clon);
-        
+        categorias.push (nombreCol.textContent)        
     }   
 }
 
@@ -100,7 +95,7 @@ addBtn.addEventListener("click",(e)=>{
         ul.appendChild(li);
         
         historial.unshift(input.value)
-        if(historial.length=5){
+        if(historial.length=30){
             historial.pop()
             console.log(historial)
         }
